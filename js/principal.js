@@ -58,3 +58,8 @@ botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
      alert("Oi eu sou o botao e fui clicado");
     //var form = document.querySelector("#form-adiciona");
+
+    var nome = form.nome.value;
+    var nome = form.peso.value;
+    var nome = form.altura.value;
+    var nome = form.gordura.value;
