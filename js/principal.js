@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
@@ -63,3 +65,18 @@ botaoAdicionar.addEventListener("click", function(event) {
     var nome = form.peso.value;
     var nome = form.altura.value;
     var nome = form.gordura.value;
+
+    var pacienteTr= document.createElement("tr");
+
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+
+}
