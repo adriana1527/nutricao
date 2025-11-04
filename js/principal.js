@@ -46,20 +46,12 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-titulo.addEventListener("click", mostraMensagem);
-function mostraMensagem(){
-    alert("Olá eu fui clicado.")
-}
-
-titulo.addEventListener("click", function(){
-    alert("Ola eu fui clicado numa funcao anonima");
-});
-
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
-     alert("Oi eu sou o botao e fui clicado");
-    //var form = document.querySelector("#form-adiciona");
+    // alert("Oi eu sou o botao e fui clicado");
+    
+     var form = document.querySelector("#form-adiciona");
 
     var nome = form.nome.value;
     var nome = form.peso.value;
@@ -82,9 +74,9 @@ botaoAdicionar.addEventListener("click", function(event) {
     pacienteTr.appendChild(nomeTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
-    pacienteTr.appendChild(gorguraTd);
+    pacienteTr.appendChild(gorduraTd);
 
     var tabela=document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTd);
 
-}
+});
